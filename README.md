@@ -7,7 +7,9 @@ Foroboto
 
 # About the tool
 
-This tool automates the acquisition of Android Devices via ADB. The following collection levels are available;
+This tool automates the acquisition of Android Devices via ADB using Windows or Unix based workstations. 
+
+The following collection levels are available at this time:
 
 
      [USER] Select the run level you wish to execute:
