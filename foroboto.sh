@@ -164,7 +164,7 @@ echo "1. Collect live information (Dumpstate + Logcat)"
 echo "2. Level 1 + System information"
 echo "3. Level 2 + Logical acquisition of the SD Card"
 echo "4. Level 3 + Logical acquisition of the Data directory"
-echo "5. Level 4 + Full logical acuisition (Common local directories)"
+echo "5. Level 4 + Full logical acquisition (Common local directories)"
 echo -n "Type in the collection level (1-5):"
 read COLLVL
 echo You selected level $COLLVL
