@@ -153,6 +153,10 @@ echo [INFO] Acquiring Tombstones Directory
 mkdir %RPTNUM%\fs-pull\tombstones
 %_ADBPATH% pull /tombstones/ %RPTNUM%/fs-pull/tombstones/ >> %RPTNUM%/fs-pull.log.txt  2>&1
 
+echo [INFO] Acquiring Proc Directory
+mkdir %RPTNUM%\fs-pull\proc
+%_ADBPATH% pull /proc/ %RPTNUM%/fs-pull/proc/ >> %RPTNUM%/fs-pull.log.txt  2>&1
+
 rem Start processing Level 4
 :lvl4
 
