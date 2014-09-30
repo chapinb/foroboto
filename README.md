@@ -5,6 +5,20 @@ Foroboto
 
 *Copyright (C) 2014, Chapin Bryce*
 
+# About the tool
+
+This tool automates the acquisition of Android Devices via ADB. The following collection levels are available;
+
+
+     [USER] Select the run level you wish to execute:
+     1. Collect live information (Dumpstate + Logcat)
+     2. Level 1 + System information
+     3. Level 2 + Logical acquisition of the SD Card
+     4. Level 3 + Logical acquisition of the Data directory
+     5. Level 4 + Full logical acuisition (Common local directories)
+     Type in the collection level (1-5):
+
+
 # Installation & Dependencies
 
 ## Windows
