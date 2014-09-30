@@ -7,7 +7,13 @@ Foroboto
 
 # Installation & Dependencies
 
+## Windows
+
 Place the `adb.exe`, `AdbWinApi.dll`, and `AdbWinUsbApi.dll` in the same directory of the `foroboto.bat` script. These dependencies can be downloaded from [Google's SDK Site](http://developer.android.com/sdk/index.html). Be sure to locate the `adb.exe` and either copy the noted dependencies into the same directory as `foroboto.bat` or copy `foroboto.bat` into the directory containing `adb.exe` 
+
+## Unix
+
+Place the `adb` file in the same directory as `foroboto.sh`. You may also copy the `foroboto.sh` script into the directory with `adb`. For consistancy reasons, adb will not run from `/bin/` unless the `foroboto.sh` script is also located in that directory.
 
 # Usage
 
