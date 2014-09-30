@@ -53,7 +53,7 @@ ECHO 	1. Collect live information (Dumpstate + Logcat)
 ECHO 	2. Level 1 + System information 
 ECHO 	3. Level 2 + Logical acquisition of the SD Card
 ECHO 	4. Level 3 + Logical acquisition of the Data directory
-ECHO 	5. Level 4 + Full logical acuisition (All local directories)
+ECHO 	5. Level 4 + Full logical acquisition (All local directories)
 set /p COLLVL=Type in the collection level (1-5):
 echo You selected level "%COLLVL%"
 set /p _CLV=Is this correct? (y/n)
