@@ -73,6 +73,11 @@ function lvl5 {
 	mkdir $CASENAME/fs-pull/tombstones
 	$_ADBPATH pull /tombstones/ $CASENAME/fs-pull/tombstones/ >> $CASENAME/fs-pull.log.txt  2>&1
 
+	echo [INFO] Acquiring Proc Directory
+	mkdir $CASENAME/fs-pull/proc
+	$_ADBPATH pull /proc/ $CASENAME/fs-pull/proc/ >> $CASENAME/fs-pull.log.txt  2>&1
+
+
 }
 
 # Start processing Level 4
