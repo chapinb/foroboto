@@ -17,7 +17,7 @@ The following collection levels are available at this time:
      2. Level 1 + System information
      3. Level 2 + Logical acquisition of the SD Card
      4. Level 3 + Logical acquisition of the Data directory
-     5. Level 4 + Full logical acuisition (Common local directories)
+     5. Level 4 + Full logical acquisition (Common local directories)
      Type in the collection level (1-5):
 
 
