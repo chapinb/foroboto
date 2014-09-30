@@ -11,14 +11,23 @@ Place the `adb.exe`, `AdbWinApi.dll`, and `AdbWinUsbApi.dll` in the same directo
 
 # Usage
 
-Run `foroboto.bat` on a Windows based system
+* Android must be plugged in and have ADB USB Debugging Enabled
+* For Level 4 and 5 Acquisition, root access is required
+  * The script will attempt to escilate to root by default
+* Device must be authenticated by device for connection
 
-1. Android must be plugged in and have ADB USB Debugging Enabled
-2. For Level 4 and 5 Acquisition, root access is required
-3. Device must be authenticated by device for connection
+## Windows Batch Script [.bat]
+
+Run `foroboto.bat` 
+
+## Unix Bash Script [.sh]
+
+Run `./foroboto.sh` 
 
 # More Information
 
 Visit the project's development page on GitHub: https://github.com/chapinb/foroboto
 Leave any feature requests or bugs found in the issues tab.
 Wiki page coming soon!
+
+Tested on Windows 7 and OSX 10.8 against a Nexus 7 2013
