@@ -101,62 +101,62 @@ If /i "%COLLVL%"=="5" goto :lvl5
 rem Start processing Level 5
 :lvl5
 
-echo [INFO] Acquiring Acct Partition
+echo [INFO] Acquiring Acct Directory
 mkdir %RPTNUM%\fs-pull\acct
 %_ADBPATH% pull /acct/ %RPTNUM%/fs-pull/acct/ >> %RPTNUM%/fs-pull.log.txt  2>&1
 
-echo [INFO] Acquiring Cache Partition
+echo [INFO] Acquiring Cache Directory
 mkdir %RPTNUM%\fs-pull\cache
 %_ADBPATH% pull /cache/ %RPTNUM%/fs-pull/cache/ >> %RPTNUM%/fs-pull.log.txt  2>&1
 
-echo [INFO] Acquiring Charger Partition
+echo [INFO] Acquiring Charger Directory
 mkdir %RPTNUM%\fs-pull\charger
 %_ADBPATH% pull /charger/ %RPTNUM%/fs-pull/charger/ >> %RPTNUM%/fs-pull.log.txt  2>&1
 
-echo [INFO] Acquiring Config Partition
+echo [INFO] Acquiring Config Directory
 mkdir %RPTNUM%\fs-pull\config
 %_ADBPATH% pull /config/ %RPTNUM%/fs-pull/config/ >> %RPTNUM%/fs-pull.log.txt  2>&1
 
-echo [INFO] Acquiring d Partition
+echo [INFO] Acquiring d Directory
 mkdir %RPTNUM%\fs-pull\d
 %_ADBPATH% pull /d/ %RPTNUM%/fs-pull/d/ >> %RPTNUM%/fs-pull.log.txt  2>&1
 
-echo [INFO] Acquiring Etc Partition
+echo [INFO] Acquiring Etc Directory
 mkdir %RPTNUM%\fs-pull\etc
 %_ADBPATH% pull /etc/ %RPTNUM%/fs-pull/etc/ >> %RPTNUM%/fs-pull.log.txt  2>&1
 
-echo [INFO] Acquiring Mnt Partition
+echo [INFO] Acquiring Mnt Directory
 mkdir %RPTNUM%\fs-pull\mnt
 %_ADBPATH% pull /mnt/ %RPTNUM%/fs-pull/mnt/ >> %RPTNUM%/fs-pull.log.txt  2>&1
 
-echo [INFO] Acquiring Res Partition
+echo [INFO] Acquiring Res Directory
 mkdir %RPTNUM%\fs-pull\res
 %_ADBPATH% pull /res/ %RPTNUM%/fs-pull/res/ >> %RPTNUM%/fs-pull.log.txt  2>&1
 
-echo [INFO] Acquiring Root Partition
+echo [INFO] Acquiring Root Directory
 mkdir %RPTNUM%\fs-pull\root
 %_ADBPATH% pull /root/ %RPTNUM%/fs-pull/root/ >> %RPTNUM%/fs-pull.log.txt  2>&1
 
-echo [INFO] Acquiring SBin Partition
+echo [INFO] Acquiring SBin Directory
 mkdir %RPTNUM%\fs-pull\sbin
 %_ADBPATH% pull /sbin/ %RPTNUM%/fs-pull/sbin/ >> %RPTNUM%/fs-pull.log.txt  2>&1
 
-echo [INFO] Acquiring Sys Partition
+echo [INFO] Acquiring Sys Directory
 mkdir %RPTNUM%\fs-pull\sys
 %_ADBPATH% pull /sys/ %RPTNUM%/fs-pull/sys/ >> %RPTNUM%/fs-pull.log.txt  2>&1
 
-echo [INFO] Acquiring System Partition
+echo [INFO] Acquiring System Directory
 mkdir %RPTNUM%\fs-pull\system
 %_ADBPATH% pull /system/ %RPTNUM%/fs-pull/system/ >> %RPTNUM%/fs-pull.log.txt  2>&1
 
-echo [INFO] Acquiring Tombstones Partition
+echo [INFO] Acquiring Tombstones Directory
 mkdir %RPTNUM%\fs-pull\tombstones
 %_ADBPATH% pull /tombstones/ %RPTNUM%/fs-pull/tombstones/ >> %RPTNUM%/fs-pull.log.txt  2>&1
 
 rem Start processing Level 4
 :lvl4
 
-echo [INFO] Acquiring Data Partition
+echo [INFO] Acquiring Data Directory
 mkdir %RPTNUM%\fs-pull\d
 %_ADBPATH% pull /data/ %RPTNUM%/fs-pull/data/ >> %RPTNUM%/fs-pull.log.txt  2>&1
 
