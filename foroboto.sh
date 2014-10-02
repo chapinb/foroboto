@@ -15,6 +15,8 @@
 #    You should have received a copy of the GNU General Public License
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+# Version 20141002
+
 #########################################
 ## Functions
 #########################################
@@ -73,9 +75,10 @@ function lvl5 {
 	mkdir $CASENAME/fs-pull/tombstones
 	$_ADBPATH pull /tombstones/ $CASENAME/fs-pull/tombstones/ >> $CASENAME/fs-pull.log.txt  2>&1
 
-	echo [INFO] Acquiring Proc Directory
-	mkdir $CASENAME/fs-pull/proc
-	$_ADBPATH pull /proc/ $CASENAME/fs-pull/proc/ >> $CASENAME/fs-pull.log.txt  2>&1
+	#Add in later - too time consuming
+	#echo [INFO] Acquiring Proc Directory
+	#mkdir $CASENAME/fs-pull/proc
+	#$_ADBPATH pull /proc/ $CASENAME/fs-pull/proc/ >> $CASENAME/fs-pull.log.txt  2>&1
 
 
 }
