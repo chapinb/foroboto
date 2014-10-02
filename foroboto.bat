@@ -15,6 +15,7 @@ rem
 rem    You should have received a copy of the GNU General Public License
 rem    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+rem Version 20141002
 
 rem Prompt user for Report Information
 @ECHO off
@@ -153,9 +154,10 @@ echo [INFO] Acquiring Tombstones Directory
 mkdir %RPTNUM%\fs-pull\tombstones
 %_ADBPATH% pull /tombstones/ %RPTNUM%/fs-pull/tombstones/ >> %RPTNUM%/fs-pull.log.txt  2>&1
 
-echo [INFO] Acquiring Proc Directory
-mkdir %RPTNUM%\fs-pull\proc
-%_ADBPATH% pull /proc/ %RPTNUM%/fs-pull/proc/ >> %RPTNUM%/fs-pull.log.txt  2>&1
+rem Add back in later. way too time consuming
+rem echo [INFO] Acquiring Proc Directory
+rem mkdir %RPTNUM%\fs-pull\proc
+rem %_ADBPATH% pull /proc/ %RPTNUM%/fs-pull/proc/ >> %RPTNUM%/fs-pull.log.txt  2>&1
 
 rem Start processing Level 4
 :lvl4
