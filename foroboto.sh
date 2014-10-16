@@ -173,7 +173,7 @@ echo "2. Level 1 + System information"
 echo "3. Level 2 + Logical acquisition of the SD Card"
 echo "4. Level 3 + Logical acquisition of the Data directory"
 echo "5. Level 4 + Full logical acquisition (Common local directories)"
-echo -n "Type in the collection level (1-5):"
+echo "Type in the collection level (1-5):"
 read COLLVL
 echo You selected level $COLLVL
 clear
@@ -185,7 +185,13 @@ mkdir $CASENAME
 echo [USER] Ensure the android device is connected and ADB Debugging is enabled on the device.
 
 $_ADBPATH devices
-$_ADBPATH root
+
+echo "Would you like to escalate to root using `adb root` [see README for more details] (y/n):"
+read RUNROOT
+if [ "$RUNROOT" == y ]; then 
+	$_ADBPATH root
+fi
+
 clear
 
 echo "**************************************************

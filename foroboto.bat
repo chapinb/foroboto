@@ -69,9 +69,10 @@ rem Check ADB devices
 echo [USER] Ensure the android device is connected and ADB Debugging is enabled on the device.
 set Press enter to check for connected ADB Devices
 %_ADBPATH% devices
-%_ADBPATH% root
 set /p _CHK=Is the correct device connected? (y/n)
 If /i "%_CHK%"=="n" goto :err4
+set /p _CHKROOT=Would you like to escalate to root using `adb root` [see README for more details] (y/n):
+If /i "%_CHKROOT%"=="y" _ADBPATH% root
 cls
 
 ECHO **************************************************
