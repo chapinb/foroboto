@@ -21,6 +21,72 @@ The following collection levels are available at this time:
      Type in the collection level (1-5):
 
 
+Each level specifies a new stage of tasks. Since each level builds on the previous, the commands are inclusive. In example, selecting level 3 will also run the commands in level 2 and level 1, but not the higher levels such as 4 or 5. 
+
+### Level 1
+
+- What it runs:
+  - Dumpstate
+  - Logcat
+- What this information means:
+  - This collections provides the most information possible in the shortest time. Though designed to provide information to developers debugging applications, it provides detailed information about a device for an examiner.
+- Is root access required:
+  - No.
+ 
+### Level 2
+
+- What it runs:
+  - Mount Points
+  - Network Connections
+  - Date and Time information
+  - Storage Device Usage
+  - List of Open Files
+  - Amount of time the device has been running
+- What this information means:
+  - This is the next stage and provides supporting information to allow the examiner to see additional information about networking and storage information.
+- Is root access required:
+  - No, but will provide more information about what files are open if available
+  
+### Level 3
+
+- What it runs:
+  - Copy SD Card data out of the device
+- What this information means:
+  - This will capture all data that is accessible with the current permissions.  
+- Is root access required:
+  - No, but more files can be captured with root accessed
+
+### Level 4
+
+- What it runs:
+  - Copy entries from /data/
+- What this information means:
+  - This is where most of the configuration and application data is stored. 
+  - There have been reported errors associated with the acquisition of all information within /data/data. Will be solved in future
+- Is root access required:
+  - Yes
+
+### Level 5
+
+- What it runs:
+  - Gathers data from the following directories:
+    - /cache
+	- /charger
+	- /config
+	- /d
+	- /etc
+	- /mnt
+	- /res
+	- /root
+	- /sbin
+	- /sys
+	- /system
+	- /tombstones
+- What this information means:
+  - This attempts to gather all information from the common directories on the device. 
+- Is root access required:
+  - Yes
+
 # Installation & Dependencies
 
 ## Windows
