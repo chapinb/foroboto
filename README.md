@@ -9,6 +9,8 @@ Foroboto
 
 This tool automates the acquisition of Android Devices via ADB using Windows or Unix based workstations. 
 
+Please note active issues prior to use on cases. Intended for development and testing purposes only.
+
 The following collection levels are available at this time:
 
 
