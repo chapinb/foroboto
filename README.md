@@ -104,7 +104,7 @@ Place the `adb` file in the same directory as `foroboto.sh`. You may also copy t
 * Android must be plugged in and have ADB USB Debugging Enabled
   * Device may be connected over a TCPIP connection or USB cable.
 * For Level 4 and 5 Acquisition, root access is required
-  * The user will be prompted to escilate root on the dvice using `adb root`.
+  * The user will be prompted to escilate root on the device using `adb root`.
 * Root escilation will only work with devices that can handle the `adb root` command.
   * Some root methods, such as TowelRoot, do not tolerate this method and may disconnect the device after refusing root
 * Device must be authenticated by device for connection
@@ -113,7 +113,6 @@ Place the `adb` file in the same directory as `foroboto.sh`. You may also copy t
 
 * With a USB cable connect the tablet to your machine.
   * Windows has an assortment of driver issues and you may have to update the driver in order to connect the device properly
-    * See http://chapinbryce.com/android-driver/ for more information on resolving the driver issues
   * Verify the connection works by running `adb devices`.
 * To connect over WiFi, ensure the device and workstation are on the same WiFi subnet, and run the following commands on the Android device
     
@@ -138,10 +137,7 @@ Run `./foroboto.sh`
 
 # More Information
 
-The full blog writeup can be found at http://chapinbryce.com/foroboto-20141002/
-
 Visit the project's development page on GitHub: https://github.com/chapinb/foroboto
 Leave any feature requests or bugs found in the issues tab.
-Wiki page coming soon!
 
 Tested on Windows 7 and OSX 10.8 against a Nexus 7 2013 running CyanogenMod and Towelroot.
