@@ -7,6 +7,9 @@ Foroboto
 
 # About the tool
 
+**While this is no longer actively maintained, please feel free to submit issues/PRs. You may also find one of the below projects useful**
+* https://github.com/RealityNet/android_triage
+
 This tool automates the acquisition of Android Devices via ADB using Windows or Unix based workstations. 
 
 Please note active issues prior to use on cases. Intended for development and testing purposes only.
